@@ -1,8 +1,17 @@
 package front;
 
-public class Main {
+import java.sql.SQLException;
 
-	public static void main(String[] args) {
+import back.Db_connect;
+
+public class Main {
+	
+
+
+	public static void main(String[] args) throws SQLException {
+		
+		Db_connect.connexion();
+	
 		// TODO Auto-generated method stub
 		System.out.println("test");
 	}
