@@ -13,7 +13,7 @@ public class Main {
 		Db_connect.connexion();
 	
 		// TODO Auto-generated method stub
-		System.out.println("test");
+
 	}
 
 }
