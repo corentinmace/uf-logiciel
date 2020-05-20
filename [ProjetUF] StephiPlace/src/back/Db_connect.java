@@ -9,7 +9,7 @@ public class Db_connect {
 	public static void connexion() throws SQLException {
 		
 	
-		 String url = "jdbc:mysql://192.168.2.10:3306/test_db?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
+		 String url = "jdbc:mysql://192.168.2.10:3306/projet_uf?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
 
 		 String utilisateur = "vpn";
 		 String motDePasse = "Formation13@";
@@ -20,16 +20,6 @@ public class Db_connect {
 			System.out.println("Connexion a la base de donnee etablie");
 		} catch(Exception e) {System.out.println(e);}
 		
-		Statement statement = con.createStatement();
-		ResultSet rs= statement.executeQuery("SELECT * FROM infos");
-		
-		while(rs.next()) {
-
-			System.out.println(rs.getString(1));
-			System.out.println(rs.getString(2));
-			System.out.println(rs.getString(3));
-			System.out.println(rs.getString(4));
-		}
 	
 	}
 }
