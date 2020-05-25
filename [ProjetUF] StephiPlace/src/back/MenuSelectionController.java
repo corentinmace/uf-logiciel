@@ -3,7 +3,6 @@ package back;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import controllers.ClientController;
 
 public class MenuSelectionController {
 	
@@ -17,6 +16,12 @@ public class MenuSelectionController {
 		System.out.println("| 1. ClientController                                                              |");
 		System.out.println("|----------------------------------------------------------------------------------|");
 		System.out.println("| 2. BienController                                                                |");
+		System.out.println("|----------------------------------------------------------------------------------|");
+		System.out.println("| 3. ProrietaireController                                                         |");
+		System.out.println("|----------------------------------------------------------------------------------|");
+		System.out.println("| 4. VilleController                                                               |");
+		System.out.println("|----------------------------------------------------------------------------------|");
+		System.out.println("| 5. QuartierController                                                            |");
 		System.out.println("|__________________________________________________________________________________|");
         
 		String choices = sc.nextLine();
@@ -35,6 +40,16 @@ public class MenuSelectionController {
 				MenuBienController.BienControllerMenu();
 				break;
 			
+			case "3":
+				MenuProprietaireController.ProprietaireControllerMenu();
+				break;
+				
+			case "4":
+				MenuVilleController.VilleControllerMenu();
+				break;
+			
+			case "5":
+				MenuQuartierController.QuartierControllerMenu();
 		}
 
 		

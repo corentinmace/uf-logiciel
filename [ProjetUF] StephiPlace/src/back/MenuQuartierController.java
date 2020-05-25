@@ -3,27 +3,26 @@ package back;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-import controllers.BienController;
+import controllers.QuartierController;
 
-public class MenuBienController {
+public class MenuQuartierController {
 	
-	public static void BienControllerMenu() throws SQLException {
+	public static void QuartierControllerMenu() throws SQLException {
 		
-		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" __________________________________________________________________________________");
 		System.out.println("|                                                                                  |");
 		System.out.println("| 0. Quitter le programme                                                          |");
 		System.out.println("|----------------------------------------------------------------------------------|");
-		System.out.println("| 1. Créer un bien                                                                 |");
+		System.out.println("| 1. Créer un quartier                                                             |");
 		System.out.println("|----------------------------------------------------------------------------------|");
-		System.out.println("| 2. Voir un bien                                                                  |");
+		System.out.println("| 2. Voir un quartier                                                              |");
 		System.out.println("|----------------------------------------------------------------------------------|");
-		System.out.println("| 3. Modifier un bien                                                              |");
+		System.out.println("| 3. Modifier un quartier                                                          |");
 		System.out.println("|----------------------------------------------------------------------------------|");
-		System.out.println("| 4. Supprimer un bien                                                             |");
+		System.out.println("| 4. Supprimer une quartier                                                        |");
 		System.out.println("|__________________________________________________________________________________|");
-        
+		
 		String choices = sc.nextLine();
 			switch(choices) {
 			
@@ -31,25 +30,26 @@ public class MenuBienController {
 				System.out.println("Closing");
 				System.exit(0);
 				break;
-			
+				
 			case "1":
-				BienController.create();
+				QuartierController.create();
 				break;
-			
+				
 			case "2":
-				BienController.read();
+				QuartierController.read();
 				break;
 			
 			case "3":
-				BienController.update();
+				QuartierController.update();
 				break;
 			
 			case "4":
-				BienController.delete();
+				QuartierController.delete();
 				break;
-			
-		}
+				
+				
 
+			}
 		
 	}
 

@@ -327,7 +327,7 @@ public class ClientController {
 		
 		System.out.println("Le nom du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -339,14 +339,14 @@ public class ClientController {
 		System.out.println("Entrez le nouveau prenom du client :");
 		String nouv = sc.nextLine();
 		
-		String req = "UPDATE client SET prenom_client ='" + nouv + "' WHERE id_client =" + NeededIdClient + "";
+		String req = "UPDATE proprietaire SET id_client ='" + NeededIdClient + "' WHERE id_client =" + NeededIdClient + "";
 		
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
 		System.out.println("Le prenom du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -365,7 +365,7 @@ public class ClientController {
 		
 		System.out.println("Le genre du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -384,7 +384,7 @@ public class ClientController {
 		
 		System.out.println("La date de naissance du client à bien été changée !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -403,7 +403,7 @@ public class ClientController {
 		
 		System.out.println("L'image du client à bien été changée !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -422,7 +422,7 @@ public class ClientController {
 		
 		System.out.println("Le numéro de téléphone du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -441,7 +441,7 @@ public class ClientController {
 		
 		System.out.println("L'email du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -460,7 +460,7 @@ public class ClientController {
 		
 		System.out.println("Le salaire du client à bien été changé !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 	
@@ -479,7 +479,7 @@ public class ClientController {
 		
 		System.out.println("La profession du client à bien été changée !");
 		
-		update();
+		MenuClientController.ClientControllerMenu();
 		
 	}
 
