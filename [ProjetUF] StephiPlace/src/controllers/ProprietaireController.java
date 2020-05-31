@@ -1,6 +1,5 @@
 package controllers;
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -33,7 +32,7 @@ public class ProprietaireController {
 		String nomClient = sc.nextLine();
 		System.out.println("Entrez le prenom du client (existant) :");
 		String prenomClient = sc.nextLine();
-		System.out.println("Entrez le numero de téléphone du client  (existant) :");
+		System.out.println("Entrez le numero de telephone du client  (existant) :");
 		String telClient = sc.nextLine();
 		
         Statement statement = Db_connect.con.createStatement();    
@@ -73,7 +72,7 @@ public class ProprietaireController {
 		statementIn.executeUpdate("INSERT INTO proprietaire (id_client, id_bien, id_client_relation1) VALUES ('" + NeededIdClient + "','" + idBien + "','" + NeededIdClient + "')");
         
         
-        System.out.println("Vous avez crée un propriétaire pour le client " + NeededNomClient + " " + NeededPrenomClient + "(id client : " + NeededIdClient + ", id du bien : " + idBien + ")" );
+        System.out.println("Vous avez cree un proprietaire pour le client " + NeededNomClient + " " + NeededPrenomClient + "(id client : " + NeededIdClient + ", id du bien : " + idBien + ")" );
         
         
         Db_connect.con.close();
@@ -98,7 +97,7 @@ public class ProprietaireController {
 			String nomClient = sc.nextLine();
 			System.out.println("Entrez le prenom du client (existant) :");
 			String prenomClient = sc.nextLine();
-			System.out.println("Entrez le numero de téléphone du client  (existant) :");
+			System.out.println("Entrez le numero de tele�phone du client  (existant) :");
 			String telClient = sc.nextLine();
 			
 	        Statement statement = Db_connect.con.createStatement();    
@@ -152,7 +151,7 @@ public class ProprietaireController {
 		String nomClient = sc.nextLine();
 		System.out.println("Entrez le prenom du client (existant) :");
 		String prenomClient = sc.nextLine();
-		System.out.println("Entrez le numero de téléphone du client  (existant) :");
+		System.out.println("Entrez le numero de tele�phone du client  (existant) :");
 		String telClient = sc.nextLine();
 		
         Statement statement = Db_connect.con.createStatement();    

@@ -25,7 +25,7 @@ public class ClientController {
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" __________________________________");
 		System.out.println("|                                  |");
-		System.out.println("|      Création d'un client        |");
+		System.out.println("|      Creation d'un client        |");
 		System.out.println("|__________________________________|");
 		
 		/* 
@@ -58,7 +58,7 @@ public class ClientController {
 		String naissanceClient = sc.nextLine();
 		System.out.println("Rentrez l'image du client (si aucune, passez :");
 		String imageClient = sc.nextLine();
-		System.out.println("Rentrez le téléphone du client :");
+		System.out.println("Rentrez le telephone du client :");
 		String telClient = sc.nextLine();
 		System.out.println("Rentrez l'email du client :");
 		String emailClient = sc.nextLine();
@@ -69,7 +69,7 @@ public class ClientController {
 		Statement statement1 = Db_connect.con.createStatement();
 		statement1.executeUpdate("INSERT INTO client (id_client, nom_client, prenom_client, genre_client, naissance_client, img_client, tel_client, email_client, password_client, id_client_salaire) VALUES ('" + idClient + "','" + nomClient + "','" + prenomClient + "','" + genreClient + "','" + naissanceClient + "','" + imageClient + "','" + telClient + "','" + emailClient + "','" + passwordClient + "','" + idClient + "')");
 		
-		System.out.println("Le client " + nomClient + " " + prenomClient + " à été ajouté (numéro de client : " + idClient +")" );
+		System.out.println("Le client " + nomClient + " " + prenomClient + " a� ete ajoute (numero de client : " + idClient +")" );
 		
 		Db_connect.con.close();
 		MenuClientController.ClientControllerMenu();
@@ -103,7 +103,7 @@ public class ClientController {
 			String nomClient = sc.nextLine();
 			System.out.println("Entrez le prenom du client :");
 			String prenomClient = sc.nextLine();
-			System.out.println("Entrez le numero de téléphone du client :");
+			System.out.println("Entrez le numero de telephone du client :");
 			String telClient = sc.nextLine();
 			
 	        Statement statement = Db_connect.con.createStatement();    
@@ -181,7 +181,7 @@ public class ClientController {
 		String nomClient = sc.nextLine();
 		System.out.println("Entrez le prenom du client :");
 		String prenomClient = sc.nextLine();
-		System.out.println("Entrez le numero de téléphone du client :");
+		System.out.println("Entrez le numero de telephone du client :");
 		String telClient = sc.nextLine();
 		
         Statement statement = Db_connect.con.createStatement();    
@@ -325,7 +325,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("Le nom du client à bien été changé !");
+		System.out.println("Le nom du client a bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -339,12 +339,12 @@ public class ClientController {
 		System.out.println("Entrez le nouveau prenom du client :");
 		String nouv = sc.nextLine();
 		
-		String req = "UPDATE proprietaire SET id_client ='" + NeededIdClient + "' WHERE id_client =" + NeededIdClient + "";
+		String req = "UPDATE proprietaire SET prenom_client ='" + nouv + "' WHERE id_client =" + NeededIdClient + "";
 		
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("Le prenom du client à bien été changé !");
+		System.out.println("Le prenom du client a bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -363,7 +363,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("Le genre du client à bien été changé !");
+		System.out.println("Le genre du client a bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -382,7 +382,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("La date de naissance du client à bien été changée !");
+		System.out.println("La date de naissance du client a bien ete changee !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -401,7 +401,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("L'image du client à bien été changée !");
+		System.out.println("L'image du client a bien ete changee !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -412,7 +412,7 @@ public class ClientController {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Entrez le nouveau numéro de téléphone du client :");
+		System.out.println("Entrez le nouveau numero de tele�phone du client :");
 		String nouv = sc.nextLine();
 		
 		String req = "UPDATE client SET tel_client ='" + nouv + "' WHERE id_client =" + NeededIdClient + "";
@@ -420,7 +420,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("Le numéro de téléphone du client à bien été changé !");
+		System.out.println("Le numero de telephone du client a�bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -439,7 +439,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("L'email du client à bien été changé !");
+		System.out.println("L'email du client a bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -458,7 +458,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("Le salaire du client à bien été changé !");
+		System.out.println("Le salaire du client a bien ete change !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -477,7 +477,7 @@ public class ClientController {
 		PreparedStatement preparedStmt = Db_connect.con.prepareStatement(req);
 		preparedStmt.execute();
 		
-		System.out.println("La profession du client à bien été changée !");
+		System.out.println("La profession du client a bien ete changee !");
 		
 		MenuClientController.ClientControllerMenu();
 		
@@ -501,7 +501,7 @@ public class ClientController {
 		String delNomClient = sc.nextLine();
 		System.out.println("Entrez le prenom du client :");
 		String delPrenomClient = sc.nextLine();
-		System.out.println("Entrez le numero de téléphone du client :");
+		System.out.println("Entrez le numero de telephone du client :");
 		String delTelClient = sc.nextLine();
 		
 		
