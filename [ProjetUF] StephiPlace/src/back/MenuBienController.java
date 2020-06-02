@@ -15,7 +15,7 @@ public class MenuBienController {
 		System.out.println("|                                                                                  |");
 		System.out.println("| 0. Quitter le programme                                                          |");
 		System.out.println("|----------------------------------------------------------------------------------|");
-		System.out.println("| 1. Créer un bien                                                                 |");
+		System.out.println("| 1. Creer un bien                                                                 |");
 		System.out.println("|----------------------------------------------------------------------------------|");
 		System.out.println("| 2. Voir un bien                                                                  |");
 		System.out.println("|----------------------------------------------------------------------------------|");

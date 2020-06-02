@@ -113,7 +113,7 @@ public class ProprietaireController {
 				System.out.println("| Prenom : " + rs.getString(3));
 				System.out.println("|----------------------------------------------------------------------------------|");
 				
-				OldIdClient = rs.getString(1);
+				NeededIdClient = rs.getString(1);
 	        }
 	        
 	        
