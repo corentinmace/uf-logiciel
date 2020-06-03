@@ -2,11 +2,20 @@ package front;
 
 import java.sql.SQLException;
 
-import back.Db_connect;
+import back.MenuSelectionController;
 
 public class Main {
 	
-	public static void main(String[] args) {
-		Window window = new Window("ProjetUF", 1280, 720);
-		Db_connect.connexion();
+
+	public static void main(String[] args) throws SQLException {
+		
+		
+		
+		//Db_connect.connexion();
+		MenuSelectionController.MainMenuControllers();
+	
+		// TODO Auto-generated method stub
+
+	}
+
 }
